@@ -2,10 +2,11 @@
   "name": "bingo",
   "version": "0.0.0",
   "license": "MIT",
+  "repository": "https://github.com/dhcode/angular-bingo-game",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
