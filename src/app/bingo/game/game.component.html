@@ -1,0 +1,15 @@
+<div class="card">
+  <h4 class="card-header">Play bingo</h4>
+  <div class="card-block">
+    <div *ngIf="!game" class="alert-warning">No current game available</div>
+    <div *ngIf="game" class="row">
+      <div class="col-8">
+        <app-game-board [game]="game" (onFound)="toggleWord($event)"></app-game-board>
+      </div>
+      <div class="col-4">
+        <app-game-stats [game]="game"></app-game-stats>
+      </div>
+    </div>
+
+  </div>
+</div>

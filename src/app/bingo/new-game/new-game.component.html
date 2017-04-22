@@ -1,0 +1,43 @@
+<div class="card">
+  <h4 class="card-header">Create new game</h4>
+  <div class="card-block">
+
+    <p>
+      When you create new game, size * size words will be randomly chosen from your words.
+    </p>
+
+    <form (submit)="createGame()" action="javascript:">
+      <div class="form-group">
+        <label for="bingoSize">Field will be size by size</label>
+        <input type="number" class="form-control" id="bingoSize" placeholder="Size" [(ngModel)]="size" name="size">
+      </div>
+
+      <div class="form-group">
+        <label for="bingoSize">Words</label>
+
+        <div>
+          <span class="btn btn-secondary mr-1 mb-1" *ngFor="let word of wordPool">{{word}}</span>
+        </div>
+
+      </div>
+
+      <div class="form-group">
+        <label for="addWord">Add Word</label>
+
+        <div class="input-group">
+          <input type="text" class="form-control" id="addWord" placeholder="Word" #addWord>
+          <span class="input-group-btn">
+            <button class="btn btn-primary" type="button" (click)="addToWordPool(addWord.value); addWord.value=''; addWord.focus()">Add</button>
+          </span>
+        </div>
+
+
+      </div>
+
+      <button class="btn btn-primary" type="submit">Create game</button>
+
+    </form>
+
+  </div>
+
+</div>

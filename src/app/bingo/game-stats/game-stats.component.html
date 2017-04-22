@@ -1,0 +1,33 @@
+<h5>Game Stats</h5>
+
+<ul class="list-group">
+  <li class="list-group-item d-flex justify-content-between">
+    <span>Total possibilities</span>
+    <span>{{gameStats.possible}}</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between">
+    <span>Bingo</span>
+    <span>{{gameStats.total}}</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between">
+    <span>Complete</span>
+    <span>{{gameStats.complete?'Complete':'Not all found'}}</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between">
+    <span>Found words</span>
+    <span>{{gameStats.foundWords}}</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between">
+    <span>Horizontal</span>
+    <span>{{gameStats.horizontal}}</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between">
+    <span>Vertical</span>
+    <span>{{gameStats.vertical}}</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between">
+    <span>Diagonal</span>
+    <span>{{gameStats.diagonal}}</span>
+  </li>
+
+</ul>

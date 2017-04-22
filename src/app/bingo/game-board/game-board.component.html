@@ -1,0 +1,9 @@
+<h5>Words</h5>
+
+<table>
+  <tr *ngFor="let row of getBoardRows()">
+    <td *ngFor="let word of row" [class.active]="isFound(word)" (click)="setFound(word)">
+      {{word}}
+    </td>
+  </tr>
+</table>

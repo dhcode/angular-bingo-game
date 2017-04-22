@@ -5,6 +5,9 @@ import { HttpModule } from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CoreModule } from './core/core.module';
+import { LocalStorageModule } from 'angular-2-local-storage';
+import { MarkdownModule } from 'angular2-markdown';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,13 @@ import { AppComponent } from './app.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CoreModule,
+    LocalStorageModule.withConfig({
+      prefix: 'bingo',
+      storageType: 'localStorage'
+    }),
+    MarkdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

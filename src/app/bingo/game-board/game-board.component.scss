@@ -1,0 +1,19 @@
+@import "~bootstrap/scss/variables";
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+td {
+  word-break: break-all;
+  text-align: center;
+  padding: 20px 10px;
+  border: 1px solid $card-border-color;
+  cursor: pointer;
+}
+td:hover {
+  background-color: $gray-lighter;
+}
+td.active {
+  background-color: $brand-primary;
+  color: $white;
+}
