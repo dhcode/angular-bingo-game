@@ -82,3 +82,9 @@ Add to app.module
       storageType: 'localStorage'
     })
 
+## Get prepared files
+
+https://raw.githubusercontent.com/dhcode/angular-bingo-game/master/src/assets/words.json
+
+https://raw.githubusercontent.com/dhcode/angular-bingo-game/master/src/app/bingo/bingo-game.ts
+
