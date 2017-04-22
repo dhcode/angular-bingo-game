@@ -2,6 +2,40 @@
 
 Source code: https://github.com/dhcode/angular-bingo-game
 
+## Setup development environment
+
+1. Install Node.js >= v6.9.0 (current v7.9.0)	https://nodejs.org/en/download/
+
+2. Install Angular cli v1.0.0			https://github.com/angular/angular-cli 
+    
+    Open a terminal
+    
+        npm install -g @angular/cli
+
+3. Initialize a new Angular project
+
+    Terminal: switch to the desired projects parent folder
+
+        ng new bingo --style scss --routing
+
+4. Run it
+
+        cd bingo
+        ng serve
+
+    Open http://localhost:4200/ in your Browser
+
+
+## IntelliJ Setup
+
+- Settings -> Editor -> Code Style -> TypeScript
+    - Spaces -> Within -> ES6 import/export braces: Tick
+    - Punctuation -> Use single quotes always
+
+
+- Settings -> Plugins -> Browse repositories
+    - Angular JS (Framework Integration) should be installed
+
 
 ## Add bootstrap
 
